@@ -22,6 +22,8 @@ add_enclave(
   ${CMAKE_CURRENT_BINARY_DIR}/cppException_t.c)
 
 enclave_compile_features(cppException_enc PRIVATE cxx_generalized_initializers)
+enclave_compile_options(cppException_enc PRIVATE
+                        -mno-speculative-load-hardening)
 
 enclave_include_directories(
   cppException_enc PRIVATE ${CMAKE_CURRENT_BINARY_DIR}

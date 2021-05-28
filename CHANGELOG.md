@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [Unreleased][Unreleased_log]
 --------------
+### Security
+- OE SDK is now built using clang-10. It is required to upgrade the compiler to clang-10 if you are building the SDK from source.
 
 [v0.16.1][v0.16.1_log]
 --------------
